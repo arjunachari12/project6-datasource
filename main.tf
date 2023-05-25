@@ -17,7 +17,7 @@ data "azurerm_resource_group" "example" {
   name = "existing-rg"
 }
 
-resource "azurerm_resource_group" "rg" {
+resource "azurerm_resource_group" "example" {
   name     = data.azurerm_resource_group.example.name
   location = data.azurerm_resource_group.example.location
   tags = {
